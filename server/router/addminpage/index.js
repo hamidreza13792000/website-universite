@@ -48,6 +48,8 @@ route.post("/insertclassform",(req,res)=>{
 });
    
 
+
+
 route.post("/selectAllclasstb",(req,res)=>{
     console.log("ok select classtb ....!!");
    con.selectAllclasstb().then((data)=>{
@@ -62,6 +64,9 @@ route.post("/selectAllclasstb",(req,res)=>{
    });
    
 })
+
+
+
 
 // update state 
 route.post("/updateState",(req,res)=>{
