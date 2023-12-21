@@ -82,7 +82,8 @@ const upload = multer({
         }
 
            con.insrtformcontect([fname,lname,build,topic,Description,nameroom,nemeclass,date,state,uploadfile,uploadfile1,uploadfile2]);
-           console.log("ok")
+           console.log("ok");
+           res.send(JSON.stringify("submit form"))
         }
 
 });

@@ -20,6 +20,7 @@ btnsub.addEventListener("click", (e)=>{
             body:JSON.stringify({inputvalue:inputclass.value})
         }).then(result=>result.json()).then((data)=>{
             forminsertnewclass.reset();
+            window.location=window.location;
         })
 
 

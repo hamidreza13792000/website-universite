@@ -9,7 +9,7 @@ route.post("/contactroute",[
     check("fname").isString().notEmpty().withMessage("نام نمیتواند خالی باشد"),
     check("lname").isString().notEmpty().withMessage("نام خانوادگی نمی تواند خالی باشد"),
     check("numberstudent").isNumeric().notEmpty().withMessage("شماره دانشجویی نمیتواند بیشتر از این باشد."),
-    check("discription").isString().notEmpty().isLength({min:10,max:500}).withMessage("توضیحات نمی تواند خالی باشد و حداکثر طول ان نمیتواند بیشتر از ۵۰۰ حرف باشد.")
+    check("discription").isString().notEmpty().isLength({max:500}).withMessage("توضیحات نمی تواند خالی باشد و حداکثر طول ان نمیتواند بیشتر از ۵۰۰ حرف باشد.")
 ],(req,res)=>{
     const error=validationResult(req);
     if(!error.isEmpty()){
@@ -23,6 +23,7 @@ else{
     const state="جدید";
     con.insertcontactme([fname,lname,numberstudent,discription,state,date]).then((data)=>{  
     })
+    res.send(JSON.stringify("ok"));
 }
 
 
