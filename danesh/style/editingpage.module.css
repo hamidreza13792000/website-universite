@@ -1,0 +1,7 @@
+.editingpagesection1{
+    transform: scale(1) perspective(1040px) rotateY(15deg) rotateX(2deg) rotate(2deg);
+    -webkit-transform: scale(1) perspective(1040px) rotateY(15deg) rotateX(2deg) rotate(2deg);
+    -moz-transform: scale(1) perspective(1040px) rotateY(15deg) rotateX(2deg) rotate(2deg);
+    -ms-transform: scale(1) perspective(1040px) rotateY(15deg) rotateX(2deg) rotate(2deg);
+    -o-transform: scale(1) perspective(1040px) rotateY(15deg) rotateX(2deg) rotate(2deg);
+}
