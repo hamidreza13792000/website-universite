@@ -76,10 +76,10 @@ export default function Contact() {
 
                     <div className='flex justify-evenly items-center flex-row mt-[10px] whitespace-nowrap'>
 
-                        <Inputthemplate formik={...formik.getFieldProps("fname")} type={"text"} css={"lg:w-[80%] w-[70%]"} id={"name"} label={"نام"}/>
+                        <Inputthemplate formik={...formik.getFieldProps("fname")} type={"text"} css={"lg:w-[80%] w-[70%]"} lblcss={"lg:mr-0 mr-[-80px]"} id={"name"} label={"نام"}/>
                         
 
-                        <Inputthemplate formik={...formik.getFieldProps("lname")} type={"text"} css={"lg:w-[70%] w-[65%]"} id={"name"} label={"نام خانوادگی" }/>
+                        <Inputthemplate formik={...formik.getFieldProps("lname")} type={"text"} css={"lg:w-[70%] w-[65%]"} lblcss={"lg:mr-0 mr-[-50px]"} id={"name"} label={"نام خانوادگی" }/>
 
                     </div>
                     <div  className='flex justify-start items-center flex-row mt-[10px] whitespace-nowrap'>
@@ -91,7 +91,7 @@ export default function Contact() {
 
 
                     <div className=' mt-[20px] whitespace-nowrap  w-full overflow-hidden rounded-lg'>
-                        <Inputthemplate formik={...formik.getFieldProps("numberstudent")} type={"number"} css={"w-full"} id={"name"} label={"شماره دانشجویی"}/>
+                        <Inputthemplate formik={...formik.getFieldProps("numberstudent")} type={"number"} css={"w-full"} id={"name"} lblcss={"lg:mr-0 mr-[-230px]"} label={"شماره دانشجویی"}/>
                         {formik.touched.numberstudent && formik.errors.numberstudent?(<div className='bg-red-600 rounded-lg lg:w-[300px] w-full font-vlight text-[1rem] text-gray-100 text-right shadow-lg mt-2 p-1 mr-[7rem]'>{formik.errors.numberstudent}</div>):null}
                     </div>
 
